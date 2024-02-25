@@ -309,7 +309,7 @@
       <!--=============== MAIN JS ===============-->
       <script src="main.js"></script>
    
-   <!-- Link Remix Icons -->
+  <!-- Link Remix Icons -->
    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
    <!-- Link ScrollReveal CSS -->
@@ -328,13 +328,50 @@
    <!-- Your existing JS code or scripts -->
 
    <script>
-      // Initialize ScrollReveal with delay
-      ScrollReveal().reveal('.home__data, .home__social,.contact__container, .footer__container', { origin: 'left', delay: 1000 });
-      ScrollReveal().reveal('.home__image', { origin: 'right', delay: 1000 });
-      ScrollReveal().reveal('.about__data,.data__skill', { origin: 'left', delay: 1000 });
-      ScrollReveal().reveal('.about__data, .skill__projects', { origin: 'right', delay: 1000 });
-      ScrollReveal().reveal('.projects__card', { interval: 100, delay: 1000 });
-      ScrollReveal().reveal('.contact__container', { origin: 'left', delay: 1000 });
+      // Initialize ScrollReveal with configuration
+      ScrollReveal().reveal('.home__data, .home__social, .contact__container, .footer__container', {
+         origin: 'top',
+         distance: '60px',
+         duration: 2500,
+         delay: 500
+      });
+      ScrollReveal().reveal('.home__image', {
+         origin: 'bottom',
+         distance: '60px',
+         duration: 2500,
+         delay: 500
+      });
+      ScrollReveal().reveal('.about__data, .skill__data',{
+         origin: 'left',
+         distance: '60px',
+         duration: 2500,
+         delay: 500
+      });
+      ScrollReveal().reveal('.about__img, .skills__content', {
+         origin: 'right',
+         distance: '60px',
+         duration: 2500,
+         delay: 500
+      });
+      ScrollReveal().reveal('.skills__data, .skill__projects', {
+         origin: 'left',
+         distance: '60px',
+         duration: 2500,
+         delay: 500
+      });
+      ScrollReveal().reveal('.projects__card', {
+         origin: 'top',
+         distance: '60px',
+         duration: 2500,
+         delay: 500,
+         interval: 100
+      });
+      ScrollReveal().reveal('.contact__container', {
+         origin: 'top',
+         distance: '60px',
+         duration: 2500,
+         delay: 500
+      });
    </script>
 </body>
 </html>
