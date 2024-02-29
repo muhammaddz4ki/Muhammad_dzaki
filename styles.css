@@ -939,6 +939,20 @@ text-align: center;
     margin: 0;
     justify-content: flex-end;
   }
+}
+.back-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #383737;
+  color: rgb(4, 199, 39);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+}
 
-
+.back-button:hover {
+  background-color: #000000;
 }
