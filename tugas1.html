@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+
+
+
+<button onclick="goBack()" class="back-button">Back</button>
+
+<section class="projects section" id="projects">
+    <h3 class="section__subtitle">
+       Tugas<span> saya</span>
+    </h3>
+ 
+    <h2 class="section__title">
+       Tugas Elektronika
+    </h2>
+ 
+    <div class="projects__container container grid">
+       <article class="projects__card">
+          <img src="assignment1.svg" alt="project image" class="projects__img">
+ 
+          <div class="projects__modal">
+             <span class="projects__subtitle">Project 1</span>
+             <h2 class="projects__title">Subject A</h2>
+ 
+             <a href="link_tugas_1.docx" class="projects__button">
+                View Project <i class="ri-external-link-fill"></i>
+             </a>
+          </div>
+       </article>
+ 
+       <!-- Artikel projek lainnya -->s
+    </div>
+ </section>
+
+<script>
+   function goBack() {
+    window.location.href = "index.html";
+   }
+</script>
+</body>
+</html>
