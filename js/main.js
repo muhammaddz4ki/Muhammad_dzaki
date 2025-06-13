@@ -159,4 +159,33 @@ document.addEventListener('DOMContentLoaded', function() {
     if(yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
+
+    // Add this to your existing JavaScript
+
+// Animate skills bars on scroll
+function animateSkills() {
+    const skills = document.querySelectorAll('.skills__progress');
+    skills.forEach(skill => {
+        const width = skill.style.width;
+        skill.style.width = '0';
+        setTimeout(() => {
+            skill.style.width = width;
+        }, 100);
+    });
+}
+
+// Intersection Observer for skills animation
+const skillsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateSkills();
+            skillsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 });
+
+const skillsSection = document.querySelector('.skills');
+if (skillsSection) {
+    skillsObserver.observe(skillsSection);
+}
 });
